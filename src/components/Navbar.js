@@ -16,7 +16,7 @@ const NavBar = () => {
                 <Nav className="mr-auto">
                     <NavLink href="/">Home</NavLink>
                     <Form inline>
-                        <Input type="text" placeholder="Search Users"/>
+                        <Input type="text" placeholder="Type Username"/>
                         <Button variant="outline-sucess"> Search</Button>
                     </Form>
                 </Nav>
