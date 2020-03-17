@@ -21,6 +21,7 @@ const LoginModal = () => {
     top: 0,
     left: 0,
     color: 'white',
+    zIndex: 999999
   }
   
   const buttonClick1 = () => {

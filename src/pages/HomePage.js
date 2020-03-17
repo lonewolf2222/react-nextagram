@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom"
 import { Card, Button } from "react-bootstrap"
 import UserImages from '../containers/UserImages'
+import UserImagesTest from '../containers/UserImagesTest'
 
 const HomePage = () => {
 
@@ -32,7 +33,7 @@ const [users, setUsers] = useState([])
                 </Card.Body>
                 </Card>
               </div>
-            <UserImages value={user.id}/>
+            <UserImagesTest value={user.id}/>
           </div>
         ))}
       </div>
