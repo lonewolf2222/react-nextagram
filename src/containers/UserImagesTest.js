@@ -8,7 +8,7 @@ const [isLoading, setIsLoading] = useState (true)
 const [images, setImages] = useState([])
 
     useEffect(() => {
-        axios.get(`https://nextagram-lonewolf2222.herokuapp.com//api/v1/images?userId=${parseInt(props.value)}`)
+        axios.get(`https://nextagram-lonewolf2222.herokuapp.com/api/v1/images?userId=${parseInt(props.value)}`)
             .then(result =>{
                 setImages(result.data)
                 console.log(result.data)
