@@ -20,7 +20,7 @@ const MyProfilePage = () =>{
         //if (token !== null) {
             axios({
                 method: 'GET',
-                url: 'https:/insta.nextacademy.com/api/v1/users/me',
+                url: 'https://nextagram-lonewolf2222.herokuapp.com/api/v1/users/me',
                 headers: {'Authorization': `Bearer ${token}` }
             })
             .then((result) =>{
@@ -31,7 +31,7 @@ const MyProfilePage = () =>{
             })
             axios({
                 method: 'GET',
-                url: 'https:/insta.nextacademy.com/api/v1/images/me',
+                url: 'https://nextagram-lonewolf2222.herokuapp.com/api/v1/images/me',
                 headers: {'Authorization': `Bearer ${token}` }
             })
             .then((result) =>{

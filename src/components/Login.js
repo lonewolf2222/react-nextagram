@@ -20,7 +20,7 @@ const Login = (props) => {
         //console.log(password)
         axios({
             method: 'POST',
-            url: 'https:/insta.nextacademy.com/api/v1/login',
+            url: 'https://nextagram-lonewolf2222.herokuapp.com//api/v1/login',
             data: {
                 username: username,
                 password: password

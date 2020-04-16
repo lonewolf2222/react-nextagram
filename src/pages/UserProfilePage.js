@@ -9,7 +9,7 @@ const UserProfilePage = () => {
     const [isLoading, setIsLoading] = useState (true)
     const [images, setImages] = useState([])
         useEffect(() => {
-            axios.get(`https://insta.nextacademy.com/api/v1/images?userId=${id}`)
+            axios.get(`https://nextagram-lonewolf2222.herokuapp.com/images?userId=${id}`)
         .then(result =>{
             //console.log(result.data)
             setImages(result.data)
@@ -18,7 +18,7 @@ const UserProfilePage = () => {
     }, [])
     const [username, setUsername] = useState ({})
     useEffect(() => {
-        axios.get(`https://insta.nextacademy.com/api/v1/users/${id}`)
+        axios.get(`https://nextagram-lonewolf2222.herokuapp.com/api/v1/users/${id}`)
     .then(result =>{
         //console.log(result.data)
         setUsername(result.data)
