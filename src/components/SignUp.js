@@ -18,7 +18,7 @@ const SignUp = (props) => {
     }
 
     const checkUsername = newUsername =>{
-        axios.get(`https://https://nextagram-lonewolf2222.herokuapp.com/api/v1/users/check_name?username=${newUsername}`)
+        axios.get(`https://nextagram-lonewolf2222.herokuapp.com/api/v1/users/check_name?username=${newUsername}`)
         .then(response => {
             console.log(response.data)
             if (response.data.valid){
