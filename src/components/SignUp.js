@@ -74,7 +74,7 @@ const SignUp = (props) => {
         
         axios({
                 method: 'POST',
-                url: 'https://nextagram-lonewolf2222.herokuapp.com/api/v1/users/',
+                url: 'https://nextagram-lonewolf2222.herokuapp.com/api/v1/users',
                 data: {
                     username: username,
                     email: email,
