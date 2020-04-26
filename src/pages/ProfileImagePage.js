@@ -4,7 +4,7 @@ import { Button, Form, FormGroup, Input, FormText } from 'reactstrap';
 import { toast } from 'react-toastify';
 import { useHistory } from 'react-router-dom'
 
-const UploadPage = () => {
+const ProfileImagePage = () => {
     
     let history = useHistory()
     const token = localStorage.getItem('token')
@@ -24,7 +24,7 @@ const UploadPage = () => {
       let formData = new FormData()  
       formData.append("image", imageFile)
     
-        axios.post("https://webapp.leapnet.me/api/v1/images/upload", formData, 
+        axios.post("https://webapp.leapnet.me/api/v1/images/profileimage", formData, 
                 { headers: { Authorization: `Bearer ${token}`}})
         .then((response) => {
             if (response.data.success)
@@ -59,4 +59,4 @@ const UploadPage = () => {
     </div>
     )
 }
-    export default UploadPage
+    export default ProfileImagePage

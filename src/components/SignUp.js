@@ -74,7 +74,7 @@ const SignUp = (props) => {
         
         axios({
                 method: 'POST',
-                url: 'https://nextagram-lonewolf2222.herokuapp.com/api/v1/users',
+                url: 'https://webapp.leapnet.me/api/v1/users/create',
                 data: {
                     username: username,
                     email: email,

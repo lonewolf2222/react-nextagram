@@ -57,11 +57,16 @@ const toProfile = () => {
 const toUpload =() =>{
   history.push('/upload')
 }
+
+const toProfileImage =() =>{
+  history.push('/profileimage')
+}
 return (
   <>
       { loggedIn?
                 <>
                 <button onClick={toUpload}>Upload Photos</button>
+                <button onClick={toProfileImage}>Profile Picture</button>
                 <button onClick={toProfile}>My Profile</button>
                 <button onClick={logOut}>Log Out </button>
                 </>

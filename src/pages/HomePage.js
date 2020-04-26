@@ -10,7 +10,7 @@ const HomePage = () => {
 const [users, setUsers] = useState([])
   useEffect(() => {
     // performing a GET request
-    axios.get('https://nextagram-lonewolf2222.herokuapp.com/api/v1/users')
+    axios.get('https://webapp.leapnet.me/api/v1/users')
     .then(result => {
       setUsers(result.data)
     })
